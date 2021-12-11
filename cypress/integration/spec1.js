@@ -2,7 +2,7 @@
 // https://on.cypress.io/intelligent-code-completion
 /// <reference types="cypress" />
 
-describe('Express server', () => {
+describe('Express server 1', () => {
   it('responds', () => {
     cy.request('http://localhost:6000').its('body').should('deep.include', {
       message: 'Hello World!',
