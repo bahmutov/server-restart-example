@@ -4,8 +4,8 @@ const express = require('express')
 const getPort = require('get-port')
 const { makeRange } = getPort
 
-console.log('getPort', getPort)
-console.log('makeRange', makeRange)
+// console.log('getPort', getPort)
+// console.log('makeRange', makeRange)
 
 function makeServer() {
   const app = express()
