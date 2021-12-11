@@ -23,5 +23,8 @@
     "cypress": "^9.1.1",
     "express": "^4.17.1",
     "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "get-port": "^5.1.1"
   }
 }
