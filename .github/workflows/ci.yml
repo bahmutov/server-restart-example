@@ -1,0 +1,9 @@
+name: ci
+on: [push]
+jobs:
+  standard-test:
+    # check out source code, install and cache dependencies
+    # and run Cypress tests using cypress-io/github-action
+    # using a single machine
+    # https://github.com/bahmutov/cypress-workflows
+    uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
