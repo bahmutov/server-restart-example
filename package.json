@@ -1,0 +1,27 @@
+{
+  "name": "server-restart-example",
+  "version": "1.0.0",
+  "description": "Example of testing an Express server running inside the Cypress plugin process",
+  "private": true,
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/server-restart-example.git"
+  },
+  "keywords": [
+    "cypress-example"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/server-restart-example/issues"
+  },
+  "homepage": "https://github.com/bahmutov/server-restart-example#readme",
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "express": "^4.17.1",
+    "prettier": "^2.5.1"
+  }
+}
