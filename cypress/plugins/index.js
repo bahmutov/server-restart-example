@@ -29,4 +29,14 @@ module.exports = (on, config) => {
     await close()
     console.log('closed the server running on port %d', port)
   })
+
+  on('task', {
+    getPort() {
+      console.log('returning the port number %d', port)
+      if (!port) {
+        throw new Error('no port number available')
+      }
+      return port
+    },
+  })
 }

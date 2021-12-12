@@ -4,14 +4,17 @@
 
 describe('Express server 1', () => {
   it('responds', () => {
-    cy.request('http://localhost:6000').its('body').should('deep.include', {
+    const url = Cypress.env('url')
+    const port = Cypress.env('port')
+    cy.request(url).its('body').should('deep.include', {
       message: 'Hello World!',
-      port: 6000,
+      port,
     })
   })
 
   it('responds with random id', () => {
-    cy.request('http://localhost:6000')
+    const url = Cypress.env('url')
+    cy.request(url)
       .its('body.responseId')
       .should('be.a', 'number')
       .and('be.within', 1e5, 1e6)
