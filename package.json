@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bahmutov/server-restart-example#readme",
   "devDependencies": {
+    "cy-spok": "^1.4.1",
     "cypress": "^9.1.1",
     "express": "^4.17.1",
     "prettier": "^2.5.1"
